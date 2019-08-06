@@ -1,0 +1,33 @@
+German tanks:
+
+http://www.greenteapress.com/thinkbayes/thinkbayes.pdf
+
+In the second world war allied forces needed to estimate the number of German tanks. Whenever a tank was captured the allies were able to observe its serial number. A serial number consists of a single letter identifying the factory, and the sequential id of that particular tank. After one battle the allies were able to observe the following serial numbers:
+
+[M98, M508, M727, M520, K85, K58, K13, K7, K74, K75, K64, F225, F292, F241, F453, F464, F165, F182, F334, F88]
+
+Write out the likelihood of observing a single tank.
+
+Derive the maximum likelihood formula for the total number of tanks given a dataset as above.
+
+Use the formula that you derived in the previous question to estimate how many tanks there are given the dataset in the description.
+
+How strongly do you believe your estimate?
+
+(Optional) Fully work through the code given in Downey and see what the fully Bayesian estimate might be. What priors did you use?
+
+(Optional) What should we do if there might be other tank factories that we have yet to observe.
+
+Mixture of Gaussians:
+
+Using your generic equations (derived from the pre-class work on expectation maximization) show what the equations would be for a mixture of Gaussian distributions.
+
+Find code online (or write your own) to generate a mixture of 2D Gaussians.
+
+Find code online (or write your own) that uses EM to cluster the data.
+
+Plot your generated data and the 2D-fitted Gaussians.
+
+What happens if you try to fit a different number of clusters to the data? E.g. fit 5 clusters to data generated with only 2 clusters, or vice versa.
+
+Submit your work as a single PDF file. You are encouraged to type up your answers, but could also scan hand written work. Show your work for all exercises! Do not simply turn in final answers.
