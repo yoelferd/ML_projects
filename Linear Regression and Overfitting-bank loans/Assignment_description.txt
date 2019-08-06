@@ -1,0 +1,47 @@
+Lending Club data
+
+The Lending club has made an anonymized set of data available for anyone to study at:
+
+https://www.lendingclub.com/info/download-data.action
+
+The Lending Club is a platform which allows the crowdfunding of various loans. Various investors are able to browse the profiles of people applying for loans and decide whether or not to help fund them.
+
+In this assignment you will build a model that predicts the largest loan amount that will be successfully funded for given individual. This model can then be used to advise applicants on how much they could apply for.
+
+Make sure that you:
+
+download both datasets and combine appropriately.
+
+thoroughly investigate the dataset.
+
+understand each of the variables. Not all the variables will be available at this early stage of the process. Be sure to look at both the data for loans that were funded and loans that were not funded.
+
+eliminate variables which do not contribute to prediction accuracy
+
+To hand in:
+
+A clear report explaining
+
+which variables you included in the model
+
+any cleaning or transformations that you carried out on the data
+
+the type of model you used and any settings that the model required
+
+the training method you used, and any techniques that you used to avoid overfitting the data
+
+an estimate of how well the model will perform on unseen data
+
+The code for:
+
+cleaning and transforming the data (if any)
+
+fitting the model
+
+evaluating its performance
+
+If there are any issues or concerns with your model, or the data that you trained on be sure to highlight this in your report. An example of such a concern might be that the maximum funded amount might vary over time, and how that might affect your model, or your selection of data. Since this is real-world data there are bound to be issues of this sort!
+
+For this assignment, methodological correctness is the most important aspect that will be examined. It is more important to do things correctly than to build a highly accurate model. Once the course has covered more models then accuracy will be become the focus of the assignments, and methodological correctness will be taken for granted.
+
+Please convert everything to a single PDF file and submit it.
