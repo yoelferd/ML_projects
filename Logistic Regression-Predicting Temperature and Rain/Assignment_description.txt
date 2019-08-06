@@ -1,0 +1,35 @@
+Yosemite Village yearly weather
+
+Temperature is cyclical, not only on a 24 hour basis but also on a yearly basis. Convert the dataset into a richer format whereby the day of the year is also captured. For example the time “20150212 1605”, can be converted into (43, 965) because the 12th of February is the 43rd day of the year, and 16:05 is the 965th minute of the day.
+
+This data covers 6 years, so split the data into a training set of the first 5 years, and a testing set of the 6th year.
+
+Using the temperature dataset from your pre-class work (https://course-resources.minerva.kgi.edu/uploaded_files/mke/rj3Edn/yosemite-temperatures.zip) perform the following:
+
+Cover each input dimension with a list of radial basis functions. This turns the pair of inputs into a much richer representation, mapping (d,t) into (Φ₁(d), Φ₂(t)). Experiment with different numbers of radial basis functions and different widths of the radial basis function in different dimensions.
+
+Using this new representation, build a linear parameter model that captures both seasonal variations and daily variations.
+
+Create two plots, one showing the time-of-day contribution, and one showing the time-of-year contribution.
+
+Make a 3D plot showing temperature as a function of (day, time). Make sure to label your axes!
+
+Using mean squared error, quantify how your model performs on the testing data if you:
+
+Train with just the daily component of the model
+
+Train with just the yearly component of the model
+
+Train with the full model.
+
+Yosemite Village rain
+
+There is occasionally rain in Yosemite Village. Fortunately the original dataset also includes precipitation.
+
+Using logistic regression predict the probability of rain in a given day of the year.
+
+What accuracy would a classifier get if it simply predicted “No rain” all the time?
+
+Describe your model and data preparation to a level of detail so that another machine learning researcher could reproduce your results.
+
+Submit your code, and results as a pdf produced from a Python Notebook. Include relevant images or plots.
