@@ -1,0 +1,18 @@
+Load the entire MNIST digit dataset: http://yann.lecun.com/exdb/mnist/. You will probably find the following code useful:
+from sklearn.datasets import fetch_mldata\ mnist = fetch_mldata('MNIST original')
+
+Choose two digit classes (e.g 7s and 3s) from the training data, and plot some of the examples.
+
+Train a support vector classifier using each of the following kernels:
+
+Linear
+
+Poly
+
+RBF
+
+(If you encounter any issues with training time or memory issues, then you may use a reduced dataset, but carefully detail how you reduced the dataset.)
+
+Report your training times on the dataset for the different kernels.
+
+Report your error rates on the testing dataset for the different kernels.
