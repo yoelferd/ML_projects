@@ -1,0 +1,23 @@
+Fraud: A how-to guide
+
+Many cases of fraud can be detected through outlier detection or other statistical analysis. A fairly well example is Benford’s law: http://mathworld.wolfram.com/BenfordsLaw.html. This states that transactions amounts span several orders of magnitude and are best modeled in log-space. However when converted back into normal amounts, roughly 30% of the transactions will have an initial digit of “1”, and 17% will have an initial digit of “2” etc. This is very different from most people’s intuition that each digit should have an equal probability of occurring.
+
+In this problem, you will use density modeling to try and ensure that there are no statistical irregularities in data that you have generated yourself.
+
+Download the following data containing personal transactions over a period of several years: https://course-resources.minerva.kgi.edu/uploaded_files/mke/Y5GZpr/anonymized.csv
+
+Now build the following density models for:
+
+the number of transactions that occur in a single month.
+
+the day in the month that a transaction will occur on.
+
+transaction size.
+
+Create plots showing the distributions that you’ve created.
+
+Sampling from these density models, create a fictitious month of personal transactions.
+
+Explain what flaws still remain in your model that a forensic accountant might be able to find and determine that this was a fraudulent set of transactions.
+
+(Optional) How well does the data follow Benford’s law?
