@@ -1,0 +1,41 @@
+import numpy as np
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
+
+def get_data(N, display=False):
+    age = (10 + 60 * np.random.random((N, 1))).astype(int)
+    income = (10000 + 50000 * np.random.exponential(size=(N, 1)))
+    glucose = (0.001 + 0.002 * np.random.random((N, 1)))
+
+    noise = np.random.normal(scale=0.00025, size=(N, 1))
+    diabetic = (glucose + noise) > 0.002
+    diabetic = diabetic.reshape(N)
+
+    if display:
+        print("Age:\tIncome:\tBlood Sugar:\tDiabetic")
+        for a in range(N):
+
+            print("%d,\t$%.2f,\t%.4f,\t\t%d" %
+                  (age[a], income[a], glucose[a], diabetic[a]))
+
+    mat = np.hstack((age, income, glucose))
+    return mat, diabetic
+
+
+get_data(20, True)
+N = 200
+(mat, diabetic) = get_data(N)
+
+
+
+
+
+lda = LDA(n_components=1)
+lda.fit(mat, diabetic)
+
+print("LDA Projection Coefficients:")
+print(lda.coef_)
+print("Accuracy : %.3f" % lda.score(mat, diabetic))
+
+W = (lda.coef_[0, 0], lda.coef_[0, 1], lda.coef_[0, 2], lda.intercept_)
+print("The decision function is given by:")
+print("%.5f age + %.5f income + %.1f blood_sugar + %.3f > 0" % W)
