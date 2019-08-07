@@ -1,0 +1,9 @@
+Yosemite Village yearly weather
+
+This week’s assignment revisits the temperature data from Yosemite Village. This data covers 6 years, so split the data into a training set of the first 5 years, and a testing set of the 6th year.
+
+Using a sparse Gaussian process, estimate the temperature over time of day (0:00-23:59) and time of year (1-365). Describe in detail the covariance function you chose, and why. Did you fit any hyperparameters, and if so, how?
+
+Measure the mean squared error (MSE) of your Gaussian process regression, and contrast it with the MSE of your linear parameter model from a few weeks earlier. Compare and contrast the training time of your linear parameter model with the training time of the Gaussian process model.
+
+Make a 3D plot showing temperature as a function of (day, time). A contour plot is also acceptable (instead of a true 3D plot).
